@@ -140,17 +140,17 @@
             "KC_NO",
 
 
-            "KC_NO",
-            "KC_NO",
+            "KC_TRNS",
+            "KC_TRNS",
             "KC_TRNS",
 
             "KC_TRNS",
             "KC_TRNS",
 
-            "KC_NO",
-            "KC_NO",
+            "KC_TRNS",
+            "KC_TRNS",
 
-            "KC_P0"
+            "KC_TRNS"
         ],
         [
             "KC_F12",
@@ -211,15 +211,15 @@
 
             "KC_TRNS",
             "KC_TRNS",
-            "KC_NO",
+            "KC_TRNS",
 
             "KC_TRNS",
-            "KC_NO",
+            "KC_TRNS",
 
             "KC_DEL",
             "KC_TRNS",
 
-            "KC_NO"
+            "KC_TRNS"
         ],
         [
             "KC_TILD",

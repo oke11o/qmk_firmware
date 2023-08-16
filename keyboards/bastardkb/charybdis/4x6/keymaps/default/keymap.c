@@ -78,11 +78,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
        KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_ACL0, KC_ACL1, KC_ACL2, XXXXXXX, XXXXXXX, XXXXXXX,    KC_LBRC,   KC_P7,   KC_P8,   KC_P9, KC_RBRC, XXXXXXX,
+       KC_ACL0, KC_ACL1, KC_ACL2, KC_WH_U, KC_WH_D, KC_WH_L,    KC_LBRC,   KC_P7,   KC_P8,   KC_P9, KC_RBRC, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_BTN1, KC_BTN2, KC_BTN3, KC_BTN4, KC_BTN5, XXXXXXX,    KC_LEFT,   KC_UP,   KC_DOWN,   KC_RGHT, KC_PMNS, KC_PEQL,
+       KC_BTN5, KC_BTN4, KC_BTN3, KC_BTN2, KC_BTN1, KC_WH_R,    KC_LEFT,   KC_UP,   KC_DOWN,   KC_RGHT, KC_PMNS, KC_PEQL,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-      KC_LCTL, EC_NORM, EC_SWAP, QK_REBOOT, EE_CLR,  QK_BOOT,    KC_MS_U,   KC_MS_D,   KC_MS_L,   KC_MS_R, KC_PSLS, KC_PDOT,
+      KC_LCTL, EC_NORM, EC_SWAP, QK_REBOOT, EE_CLR,  QK_BOOT,   KC_MS_U,  KC_MS_D,  KC_MS_L,   KC_MS_R, KC_PSLS, KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, _______,    XXXXXXX, _______,
                                            XXXXXXX, XXXXXXX,      KC_P0

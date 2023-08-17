@@ -57,11 +57,11 @@
             "KC_RBRC",
             "MO(1)",
             "KC_LGUI",
-            "KC_SPC",
+            "KC_BSPC",
             "KC_ENT",
             "MO(2)",
             "MO(3)",
-            "KC_BSPC",
+            "KC_SPC",
             "KC_LALT"
         ],
         [
@@ -173,11 +173,11 @@
             "KC_VOLD",
             "KC_TRNS",
             "KC_TRNS",
-            "KC_TRNS",
-            "KC_TRNS",
-            "KC_TRNS",
-            "KC_TRNS",
             "KC_DEL",
+            "KC_TRNS",
+            "KC_TRNS",
+            "KC_TRNS",
+            "KC_TRNS",
             "KC_TRNS"
         ],
         [

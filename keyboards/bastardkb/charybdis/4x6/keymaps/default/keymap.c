@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RBRC,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                    LOWER,  KC_LGUI, KC_SPC,       KC_ENT,   RAISE,
-                                           THIRD,  KC_BSPC,    KC_LALT
+                                           THIRD,  XXXXXXX,     KC_LALT
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TRNS, KC_BTN4, KC_BTN3, KC_BTN2, KC_BTN1, XXXXXXX,     KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSLS, KC_EQL,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-      KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, EE_CLR,  QK_BOOT,    XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX,
+      KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_BSPC,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LALT, XXXXXXX,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   _______, _______, KC_TRNS,    KC_TRNS, KC_TRNS,
                                            _______, _______,      _______
@@ -67,10 +67,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TRNS, KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, XXXXXXX,    XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_MUTE,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_HOME, KC_PGUP, KC_PGDN,  KC_END, XXXXXXX,    QK_BOOT, EE_CLR,  KC_SPC, KC_SPC, KC_SPC,  KC_VOLD,
+       KC_TRNS, KC_HOME, KC_PGUP, KC_PGDN,  KC_END, KC_DEL,    QK_BOOT, EE_CLR,  KC_SPC, KC_SPC, KC_SPC,  KC_VOLD,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   _______, _______, _______,   _______, _______,
-                                           _______, KC_DEL,    _______
+                                           _______, _______,    _______
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 

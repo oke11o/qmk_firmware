@@ -61,13 +61,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [LAYER_RAISE] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-        KC_F12,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,    KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,
+       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_GRV, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, XXXXXXX, KC_BTN2,
+       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,     XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, XXXXXXX, KC_BTN2,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_LALT, KC_BTN1,
+       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,    KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_LALT, KC_BTN1,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DEL,    KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS, DRGSCRL,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_DEL,    KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS, DRGSCRL,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   _______, _______, _______,   _______, _______,
                                            _______, _______,    _______
@@ -76,13 +76,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [LAYER_THIRD] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       KC_MS_U, KC_MS_D, KC_MS_L, KC_MS_R, XXXXXXX, XXXXXXX,    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS,
+       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,    KC_LBRC,   KC_P7,   KC_P8,   KC_P9, KC_RBRC, KC_VOLU,
+       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_LBRC,   KC_P7,   KC_P8,   KC_P9, KC_RBRC, KC_VOLU,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_BTN5, KC_BTN4, KC_BTN3, KC_BTN2, KC_BTN1, KC_WH_R,    KC_LEFT,  KC_DOWN,  KC_UP,   KC_RGHT, KC_PMNS, KC_MUTE,
+       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,     KC_LEFT,  KC_DOWN,  KC_UP,   KC_RGHT, KC_PMNS, KC_MUTE,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, DRGSCRL,    KC_LCTL, EC_NORM, EC_SWAP, QK_REBOOT, EE_CLR,  KC_VOLD,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX,   KC_LCTL, EC_NORM, EC_SWAP, QK_REBOOT, EE_CLR,  KC_VOLD,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX

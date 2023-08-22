@@ -27,7 +27,7 @@
 
 #ifdef POINTING_DEVICE_ENABLE
 #    ifndef CHARYBDIS_MINIMUM_DEFAULT_DPI
-#        define CHARYBDIS_MINIMUM_DEFAULT_DPI 400
+#        define CHARYBDIS_MINIMUM_DEFAULT_DPI 500
 #    endif // CHARYBDIS_MINIMUM_DEFAULT_DPI
 
 #    ifndef CHARYBDIS_DEFAULT_DPI_CONFIG_STEP
@@ -39,7 +39,7 @@
 #    endif // CHARYBDIS_MINIMUM_SNIPER_MODE_DPI
 
 #    ifndef CHARYBDIS_SNIPING_DPI_CONFIG_STEP
-#        define CHARYBDIS_SNIPING_DPI_CONFIG_STEP 100
+#        define CHARYBDIS_SNIPING_DPI_CONFIG_STEP 200
 #    endif // CHARYBDIS_SNIPING_DPI_CONFIG_STEP
 
 // Fixed DPI for drag-scroll.
@@ -210,7 +210,7 @@ void charybdis_set_pointer_dragscroll_enabled(bool enable) {
     maybe_update_pointing_device_cpi(&g_charybdis_config);
 }
 
-bool charybdis_get_pointer_carret_enabled(void) { 
+bool charybdis_get_pointer_carret_enabled(void) {
     return g_charybdis_config.is_carret_enabled;
 }
 

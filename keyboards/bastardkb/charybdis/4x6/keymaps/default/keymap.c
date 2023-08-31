@@ -50,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LALT,  KC_1,   KC_2,   KC_3,   KC_4,   KC_5,           KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   KC_MINS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LSFT, XXXXXXX, KC_BTN3, KC_BTN2, KC_BTN1, DRGSCRL,     KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_RALT, KC_EQL,
+       KC_LSFT, XXXXXXX, KC_BTN3, KC_BTN2, KC_BTN1, DRGSCRL,    XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_EQL,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LCTL, KC_LGUI, XXXXXXX, XXXXXXX, KC_SPC, KC_BSPC,     XXXXXXX, XXXXXXX, KC_RSFT, KC_RCTL, KC_RGUI, KC_BSLS,
+       KC_LCTL, KC_LGUI, KC_LBRC, KC_RBRC, KC_SPC, KC_BSPC,     XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSLS,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   _______, _______, KC_TRNS,    KC_TRNS, KC_TRNS,
                                            _______, _______,      _______
@@ -65,9 +65,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,     KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,    KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_LALT, KC_BTN1,
+       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,    KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_RALT, KC_BTN1,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_DEL,    XXXXXXX, KC_ENT, KC_RCTL, KC_RALT, KC_RGUI, DRGSCRL,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_DEL,    XXXXXXX, KC_ENT, KC_RSFT, KC_RCTL, KC_RGUI, DRGSCRL,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   _______, _______, _______,   _______, _______,
                                            _______, _______,    _______

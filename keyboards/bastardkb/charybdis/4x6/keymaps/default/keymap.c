@@ -54,11 +54,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LALT, KC_MINS, KC_PLUS, KC_ENT, KC_BTN1, DRGSCRL,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MINS,
+       KC_LALT, KC_MINS, KC_PLUS, KC_ENT, KC_BTN1, DRGSCRL,    KC_TILD,  XXXXXXX, KC_LCBR, KC_RCBR, KC_ASTR, KC_SLSH,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LSFT,  KC_1,   KC_2,   KC_3,   KC_4,   KC_5,          KC_6,   KC_7,   KC_8,   KC_9,   KC_0,  KC_EQL,
+       KC_LSFT,  KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC,     KC_CIRC, KC_AMPR, KC_LPRN, KC_RPRN, KC_PIPE, KC_DQUO,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LCTL, KC_LGUI, KC_LBRC, KC_RBRC, KC_SPC, KC_BSPC,     XXXXXXX,  XXXXXXX, KC_PCMM, KC_DOT, XXXXXXX, KC_BSLS,
+       KC_LCTL, KC_LGUI, KC_LBRC, KC_RBRC, KC_SPC, KC_BSPC,     XXXXXXX,  XXXXXXX, KC_COMM, KC_DOT, KC_QUES, KC_BSLS,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   _______, _______, KC_TRNS,    KC_TRNS, KC_TRNS,
                                            _______, _______,      _______
@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,      KC_P0,   KC_P4,  KC_P5,  KC_P6, KC_PPLS, KC_PMNS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  KC_P1,  KC_P2,  KC_P3, KC_PCMM,  KC_PDOT,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  KC_P1,  KC_P2,  KC_P3, KC_KP_COMMA,  KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX

@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LALT, KC_TAB,  KC_LEFT, KC_DOWN,  KC_RGHT, XXXXXXX,   KC_0,   KC_4,  KC_5,  KC_6, KC_PPLS, KC_PMNS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LCTL, KC_LGUI, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSPC,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_KP_COMMA,  KC_PDOT,
+       KC_LCTL, KC_LGUI, KC_GRV, XXXXXXX, XXXXXXX, KC_BSPC,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_KP_COMMA,  KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX

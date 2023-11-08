@@ -19,7 +19,7 @@
 enum charybdis_keymap_layers {
     LAYER_BASE = 0,
     LAYER_LOWER,
-    LAYER_RAISE,
+    LAYER_SECOND,
     LAYER_THIRD,
     LAYER_FOURTH,
     LAYER_FIFTH,
@@ -27,7 +27,7 @@ enum charybdis_keymap_layers {
 };
 
 #define LOWER MO(LAYER_LOWER)
-#define RAISE MO(LAYER_RAISE)
+#define RAISE MO(LAYER_SECOND)
 #define THIRD MO(LAYER_THIRD)
 #define FOURTH MO(LAYER_FOURTH)
 #define FIFTH MO(LAYER_FIFTH)
@@ -65,15 +65,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
-  [LAYER_RAISE] = LAYOUT(
+  [LAYER_SECOND] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,     KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX, XXXXXXX,
+       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_PEQL,  KC_7,  KC_8,  KC_9, KC_PAST, KC_PSLS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,    KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_RALT, KC_BTN1,
+       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,     KC_0,   KC_4,  KC_5,  KC_6, KC_PPLS, KC_PMNS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_DEL,    XXXXXXX, KC_ENT, XXXXXXX, KC_GRV, KC_RGUI, DRGSCRL,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_RSFT, KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_LSFT, KC_LALT, KC_LCTL,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX
@@ -97,13 +97,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [LAYER_FOURTH] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_PEQL,  KC_7,  KC_8,  KC_9, KC_PAST, KC_PSLS,
+       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,     KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,     KC_0,   KC_4,  KC_5,  KC_6, KC_PPLS, KC_PMNS,
+       KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,    KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_RALT, KC_BTN1,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_KP_COMMA,  KC_PDOT,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_DEL,    XXXXXXX, KC_ENT, XXXXXXX, KC_GRV, KC_RGUI, DRGSCRL,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_LSFT, KC_LALT, KC_LCTL,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX

@@ -18,7 +18,7 @@
 
 enum charybdis_keymap_layers {
     LAYER_BASE = 0,
-    LAYER_LOWER,
+    LAYER_FIRST,
     LAYER_SECOND,
     LAYER_THIRD,
     LAYER_FOURTH,
@@ -26,7 +26,7 @@ enum charybdis_keymap_layers {
     LAYER_SIXTH,
 };
 
-#define LOWER MO(LAYER_LOWER)
+#define LOWER MO(LAYER_FIRST)
 #define RAISE MO(LAYER_SECOND)
 #define THIRD MO(LAYER_THIRD)
 #define FOURTH MO(LAYER_FOURTH)
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
-  [LAYER_LOWER] = LAYOUT(
+  [LAYER_FIRST] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤

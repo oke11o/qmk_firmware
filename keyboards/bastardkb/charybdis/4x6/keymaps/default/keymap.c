@@ -24,6 +24,7 @@ enum charybdis_keymap_layers {
     LAYER_FOURTH,
     LAYER_FIFTH,
     LAYER_SIXTH,
+    LAYER_SEVENTH,
 };
 
 // TODO: quantum/action_tapping.h:32: note: this is the location of the previous definition
@@ -56,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RBRC,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                            FIRST,  KC_LGUI, LT(3, KC_ENT),     LT(4, KC_ENT),   LT(2, KC_SPC),
-                                    MO(6),  LT(5, KC_ESC),     LT(6, KC_DEL)
+                                    TO(6),  LT(5, KC_ESC),     LT(6, KC_DEL)
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
@@ -98,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LALT, KC_TAB,  KC_LEFT, KC_DOWN,  KC_RGHT, XXXXXXX,   KC_0,   KC_4,  KC_5,  KC_6, KC_PPLS, KC_PMNS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LCTL, KC_LGUI, KC_GRV, XXXXXXX, KC_E, KC_DEL,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_KP_COMMA,  KC_PDOT,
+       KC_LCTL, KC_LGUI, KC_GRV, XXXXXXX, KC_E,  KC_DEL,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, OSM(MOD_LSFT),  KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX
@@ -143,10 +144,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_PPLS, KC_PMNS,   KC_4,  KC_5,  KC_6, KC_0,           KC_LEFT,  KC_DOWN,  KC_UP,   KC_RGHT, KC_PMNS, KC_MUTE,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_KP_COMMA, KC_PDOT, KC_1,  KC_2,  KC_3,OSM(MOD_LGUI),   KC_LCTL, EC_NORM, EC_SWAP, QK_REBOOT, EE_CLR,  KC_VOLD,
+     KC_PDOT, OSM(MOD_LSFT), KC_1, KC_2, KC_3, OSM(MOD_LGUI),   KC_LCTL, EC_NORM, EC_SWAP, QK_REBOOT, EE_CLR,  KC_VOLD,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                XXXXXXX, XXXXXXX, THIRD,    XXXXXXX, XXXXXXX,
-                                           TO(LAYER_BASE), XXXXXXX,    XXXXXXX
+                                  MO(7),  XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX,
+                                   TO(LAYER_BASE), XXXXXXX,    XXXXXXX
+  //                            ╰───────────────────────────╯ ╰──────────────────╯
+  ),
+
+  [LAYER_SEVENTH] = LAYOUT(
+  // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
+       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
+       XXXXXXX, KC_ESC,  XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
+       XXXXXXX, KC_DEL,  KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
+       XXXXXXX, XXXXXXX, XXXXXXX, KC_ENT,  KC_SPC,  KC_DEL,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
+                                  XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
+                                           XXXXXXX, XXXXXXX,    XXXXXXX
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 };

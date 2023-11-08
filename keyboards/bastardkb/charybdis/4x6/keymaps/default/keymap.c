@@ -26,12 +26,22 @@ enum charybdis_keymap_layers {
     LAYER_SIXTH,
 };
 
-#define LOWER MO(LAYER_FIRST)
-#define RAISE MO(LAYER_SECOND)
+// TODO: quantum/action_tapping.h:32: note: this is the location of the previous definition
+// #define TAPPING_TOGGLE 2
+
+#define FIRST MO(LAYER_FIRST)
+#define SECOND MO(LAYER_SECOND)
 #define THIRD MO(LAYER_THIRD)
 #define FOURTH MO(LAYER_FOURTH)
 #define FIFTH MO(LAYER_FIFTH)
 #define SIXTH MO(LAYER_SIXTH)
+
+// TG(layer) - Toggle layer on/off
+// TO(layer) - Turn on layer when pressed
+// TT(layer) - Normally acts like MO unless it's tapped multple times which toggles layer on
+// DF(layer) - Sets the default layer
+// OSL(layer) - Switch to layer for one keypress
+// LT(0,kc) - kc on tap, switch to layer 0 while held
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -45,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RBRC,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                   LOWER,  KC_LGUI, THIRD,      FOURTH,   RAISE,
+                                   FIRST,  KC_LGUI, THIRD,      FOURTH,   SECOND,
                                            TO(6),  FIFTH,     SIXTH
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
@@ -73,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,     KC_0,   KC_4,  KC_5,  KC_6, KC_PPLS, KC_PMNS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_RSFT, KC_PDOT,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, KC_W, XXXXXXX,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_RSFT, KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_LSFT, KC_LALT, KC_LCTL,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX
@@ -88,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LALT, KC_TAB,  KC_LEFT, KC_DOWN,  KC_RGHT, XXXXXXX,   KC_0,   KC_4,  KC_5,  KC_6, KC_PPLS, KC_PMNS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LCTL, KC_LGUI, KC_GRV, XXXXXXX, XXXXXXX, KC_DEL,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_KP_COMMA,  KC_PDOT,
+       KC_LCTL, KC_LGUI, KC_GRV, XXXXXXX, KC_E, KC_DEL,    OSM(MOD_LGUI), KC_1,  KC_2,  KC_3, KC_KP_COMMA,  KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX
@@ -103,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TRNS, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,    KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_RALT, KC_BTN1,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_DEL,    XXXXXXX, KC_ENT, XXXXXXX, KC_GRV, KC_RGUI, DRGSCRL,
+       KC_TRNS, KC_F11,  KC_F12,  XXXXXXX, KC_R, KC_DEL,    XXXXXXX, KC_ENT, XXXXXXX, KC_GRV, KC_RGUI, DRGSCRL,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_LSFT, KC_LALT, KC_LCTL,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX
@@ -118,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        XXXXXXX,OSM(MOD_LSFT|MOD_LALT), OSM(MOD_LSFT|MOD_LGUI), OSM(MOD_LALT|MOD_LGUI), OSM(MOD_HYPR), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX,OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI), XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       XXXXXXX,OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI), KC_T, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
                                            XXXXXXX, XXXXXXX,    XXXXXXX

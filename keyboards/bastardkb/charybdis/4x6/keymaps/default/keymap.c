@@ -136,34 +136,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
-  [LAYER_SIXTH] = LAYOUT(
-  // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS,
-  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_PAST, KC_PSLS,  KC_7,  KC_8,  KC_9, KC_PEQL,         KC_LBRC,   KC_P7,   KC_P8,   KC_P9, KC_RBRC, KC_VOLU,
-  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_PPLS, KC_PMNS,   KC_4,  KC_5,  KC_6, KC_0,           KC_LEFT,  KC_DOWN,  KC_UP,   KC_RGHT, KC_PMNS, KC_MUTE,
-  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-     KC_PDOT, OSM(MOD_LSFT), KC_1, KC_2, KC_3, OSM(MOD_LGUI),   KC_LCTL, EC_NORM, EC_SWAP, QK_REBOOT, EE_CLR,  KC_VOLD,
-  // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                  MO(7),  XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX,
-                                   TO(LAYER_BASE), XXXXXXX,    XXXXXXX
-  //                            ╰───────────────────────────╯ ╰──────────────────╯
-  ),
-
-  [LAYER_SEVENTH] = LAYOUT(
-  // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX, KC_ESC,  XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX, KC_DEL,  KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-    SGUI(KC_Z), LGUI(KC_Z), XXXXXXX, KC_ENT, KC_SPC, KC_BSPC,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                  XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX,
-                                           XXXXXXX, XXXXXXX,    XXXXXXX
-  //                            ╰───────────────────────────╯ ╰──────────────────╯
-  ),
 };
 // clang-format on

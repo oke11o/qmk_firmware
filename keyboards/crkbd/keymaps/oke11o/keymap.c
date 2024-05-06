@@ -69,26 +69,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
     [4] = LAYOUT_split_3x6_3(
-  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
+  //╭──────────────────────────────────────────────────────╮                   ╭──────────────────────────────────────────────────────╮
       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                       KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_SPC, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+  //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
       KC_LSFT, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,                      KC_LEFT,  KC_DOWN,  KC_UP, KC_RGHT, KC_RALT, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, KC_F11,  KC_F12,  KC_LGUI, XXXXXXX,  KC_DEL,                     KC_BSPC,  KC_SPC,  KC_ENT, KC_ESC, KC_RGUI, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+  //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
+      KC_LCTL, KC_F11,  KC_F12,  KC_LGUI, XXXXXXX,  KC_DEL,                     KC_BSPC,  KC_SPC,  KC_ENT, KC_ESC, KC_RGUI, KC_GRV,
+  //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
                                           KC_TRNS, KC_TRNS,  KC_TRNS,     KC_TRNS,  KC_TRNS, KC_TRNS
-                                      //`--------------------------'  `--------------------------'
+                                      //╰───────────────────────────╯   ╰───────────────────────────╯
   ),
 
     [5] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX,OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI),OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),OSM(MOD_MEH), XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX,OSM(MOD_LSFT|MOD_LALT), OSM(MOD_LSFT|MOD_LGUI), OSM(MOD_LALT|MOD_LGUI), OSM(MOD_HYPR), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_A, OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI), KC_T, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+      XXXXXXX,OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI), OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),OSM(MOD_MEH), XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  //|--------+-------------------------------+--------------------------------+-------------------------------+------------+---------|  |--------+--------+--------+--------+--------+--------|
+      XXXXXXX,OSM(MOD_LSFT|MOD_LALT), OSM(MOD_LSFT|MOD_LGUI), OSM(MOD_LALT|MOD_LGUI), OSM(MOD_HYPR), XXXXXXX,                XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  //|--------+----------------------+-----------------------+-----------------------+--------------+--------|                |--------+--------+--------+--------+--------+--------|
+      KC_A,   OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI), KC_T, XXXXXXX,                         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  //|--------+----------------------+-----------------------+-----------------------+-----+--------|                        |--------+--------+--------+--------+--------+--------|
                                           KC_TRNS, KC_TRNS,  KC_TRNS,     KC_TRNS,  KC_TRNS, KC_TRNS
-                                      //`--------------------------'  `--------------------------'
+                                      //╰────────+────────+─────────╯    ╰────────+─────────+────────╯
   )
 };

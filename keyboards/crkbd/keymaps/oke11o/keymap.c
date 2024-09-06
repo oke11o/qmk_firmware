@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,   KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                       KC_LBRC,  KC_RBRC, KC_LCBR, KC_RCBR, KC_ASTR, KC_MINS,
+       KC_TAB,   KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                       KC_LBRC,  KC_RBRC, KC_LCBR, KC_RCBR, KC_PPLS, KC_MINS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_LSFT,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_COLN, KC_PEQL, KC_LPRN, KC_RPRN, KC_PIPE, KC_DQUO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
@@ -46,9 +46,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [2] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_BSPC,OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI), OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),OSM(MOD_MEH), KC_DEL,      KC_PEQL,  KC_7,   KC_8,    KC_9,    KC_PAST, KC_PSLS,
+      KC_BSPC,OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI), OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),OSM(MOD_MEH), KC_DEL,      KC_PEQL,  KC_7,   KC_8,    KC_9,    KC_PPLS, KC_MINS,
   //|--------+-------------------------------+--------------------------------+-------------------------------+------------+---------|   |--------+--------+--------+--------+--------+--------|
-      KC_GRV,OSM(MOD_LSFT|MOD_LALT), OSM(MOD_LSFT|MOD_LGUI), OSM(MOD_LALT|MOD_LGUI), OSM(MOD_HYPR), XXXXXXX,                              KC_0,     KC_4,   KC_5,    KC_6,    KC_PPLS, KC_MINS,
+      KC_GRV,OSM(MOD_LSFT|MOD_LALT), OSM(MOD_LSFT|MOD_LGUI), OSM(MOD_LALT|MOD_LGUI), OSM(MOD_HYPR), XXXXXXX,                              KC_0,     KC_4,   KC_5,    KC_6,    KC_PAST, KC_PSLS,
   //|--------+----------------------+-----------------------+-----------------------+--------------+--------|                            |--------+--------+--------+--------+--------+--------|
       KC_LGUI,OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI), XXXXXXX, XXXXXXX,                                   KC_SPC,   KC_1,   KC_2,    KC_3, OSM(MOD_LSFT), KC_PDOT,
   //|--------+----------------------+-----------------------+-----------------------+-----+--------|                                     |--------+--------+--------+--------+--------+--------|
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [3] = LAYOUT_split_3x6_3(
   //╭──────────────────────────────────────────────────────╮                   ╭──────────────────────────────────────────────────────╮
-       KC_TAB, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                        KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_SPC,  XXXXXXX,
+       KC_TAB, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                        KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_PPLS,  KC_MINS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
       KC_LSFT, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_RALT, KC_LSFT,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
@@ -70,9 +70,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [4] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_TAB,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_PEQL,  KC_7,  KC_8,  KC_9, KC_PAST, KC_PSLS,
+      KC_TAB,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_PEQL,  KC_7,  KC_8,  KC_9, KC_PPLS,  KC_MINS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,                       KC_0,   KC_4,  KC_5,  KC_6, KC_PPLS,  KC_MINS,
+      KC_LSFT, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,                       KC_0,   KC_4,  KC_5,  KC_6, KC_PAST, KC_PSLS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, KC_F11,  KC_F12,  KC_ENT,  KC_SPC,  KC_BSPC,                      KC_SPC, KC_1,  KC_2,  KC_3, OSM(MOD_LSFT), KC_PDOT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|

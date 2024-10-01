@@ -33,11 +33,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [1] = LAYOUT_split_3x6_3(
   //╭──────────────────────────────────────────────────────╮                   ╭──────────────────────────────────────────────────────╮
-       KC_TAB,  KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS,
+       KC_TAB,  XXXXXXX,   KC_2,    KC_3,    KC_4,    KC_5,                        KC_6,    KC_7,    KC_8,    KC_MINS, KC_PPLS, XXXXXXX,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-      KC_LSFT, KC_LALT, KC_ESC,  KC_ENT,  KC_SPC,  KC_BSPC,                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_RSFT, KC_PPLS,
+      KC_LSFT, LALT_T(KC_1), KC_ESC,  KC_ENT,  KC_SPC,  KC_BSPC,                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_9,    KC_0,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-      KC_LCTL,KC_LBRC,  KC_RBRC, KC_LCBR, KC_RCBR, XXXXXXX,                     KC_COLN, KC_PEQL,  KC_PIPE,  KC_DQUO,  KC_QUES, KC_GRV,
+      KC_LCTL,KC_LCBR, KC_RCBR, KC_LBRC,  KC_RBRC, XXXXXXX,                     KC_COLN, KC_PEQL,  KC_PIPE,  KC_DQUO,  KC_QUES, KC_GRV,
   //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
                                           KC_DEL, XXXXXXX,  KC_LGUI,      MO(1),  KC_SPC, KC_ENT
                                       //╰───────────────────────────╯   ╰───────────────────────────╯
@@ -56,13 +56,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
    [3] = LAYOUT_split_3x6_3(
- //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-     KC_ESC,OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI), OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),OSM(MOD_MEH), KC_DEL,      KC_PEQL,  KC_7,   KC_8,    KC_9,    KC_PPLS, KC_MINS,
- //|--------+-------------------------------+--------------------------------+-------------------------------+------------+---------|   |--------+--------+--------+--------+--------+--------|
-     KC_GRV,OSM(MOD_LSFT|MOD_LALT), OSM(MOD_LSFT|MOD_LGUI), OSM(MOD_LALT|MOD_LGUI), OSM(MOD_HYPR), KC_BSPC,                              KC_0,     KC_4,   KC_5,    KC_6,    KC_PAST, KC_PSLS,
- //|--------+----------------------+-----------------------+-----------------------+--------------+--------|                            |--------+--------+--------+--------+--------+--------|
-     KC_LGUI,OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI),  KC_ENT,  KC_SPC,                                   KC_SPC,   KC_1,   KC_2,    KC_3, OSM(MOD_LSFT), KC_PDOT,
- //|--------+----------------------+-----------------------+-----------------------+-----+--------|                                     |--------+--------+--------+--------+--------+--------|
+ //,-----------------------------------------------------.                                                                                             ,-----------------------------------------------------.
+     OSM(MOD_LSFT|MOD_LGUI),OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI), OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),OSM(MOD_MEH), KC_DEL,      KC_PEQL,  KC_7,   KC_8,    KC_9,    KC_PPLS, KC_MINS,
+ //|--------+-------------------------------+--------------------------------+-------------------------------+------------+---------|                  |--------+--------+--------+--------+--------+--------|
+     KC_GRV,OSM(MOD_LSFT|MOD_LALT), KC_ESC, KC_ENT,  KC_SPC, KC_BSPC,                                                                                   KC_0,     KC_4,   KC_5,    KC_6,    KC_PAST, KC_PSLS,
+ //|--------+----------------------+-----------------------+-----------------------+--------------+--------|                                           |--------+--------+--------+--------+--------+--------|
+     KC_LGUI,OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI),  OSM(MOD_LALT|MOD_LGUI), OSM(MOD_HYPR),                            KC_SPC,   KC_1,   KC_2,    KC_3, OSM(MOD_LSFT), KC_PDOT,
+ //|--------+----------------------+-----------------------+-----------------------+-----+--------|                                                    |--------+--------+--------+--------+--------+--------|
                                          KC_TRNS, KC_TRNS,  KC_TRNS,     KC_TRNS,  KC_TRNS, KC_TRNS
                                      //╰────────+────────+─────────╯    ╰────────+─────────+────────╯
  )

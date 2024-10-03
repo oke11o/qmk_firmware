@@ -45,11 +45,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [3] = LAYOUT_split_3x6_3(
   //╭──────────────────────────────────────────────────────╮                   ╭──────────────────────────────────────────────────────╮
-     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_PPLS, KC_MINS, KC_PAST, KC_PSLS, XXXXXXX,XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_PEQL, KC_7, KC_8, KC_9, KC_PAST, KC_PSLS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-     XXXXXXX, KC_LSFT,    KC_D, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_9,KC_5,KC_6,KC_7,KC_8,KC_PEQL,
+     XXXXXXX, KC_LSFT,    KC_D, XXXXXXX, XXXXXXX, XXXXXXX,                         KC_0, KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_0,KC_1,KC_2,KC_3,KC_4,KC_PDOT,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_1, KC_2, KC_3, KC_PDOT, XXXXXXX,
   //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
                                     KC_ESC, LT(4,KC_ENT),  KC_LGUI,      KC_SPC,  KC_LSFT, KC_DEL
                                       //╰───────────────────────────╯   ╰───────────────────────────╯
@@ -57,11 +57,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [4] = LAYOUT_split_3x6_3(
   //╭──────────────────────────────────────────────────────╮                   ╭──────────────────────────────────────────────────────╮
-      KC_TAB,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_PPLS, KC_MINS, KC_PAST, KC_PSLS, XXXXXXX,XXXXXXX,
+      KC_TAB,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_PEQL, KC_7, KC_8, KC_9, KC_PAST, KC_PSLS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-      KC_LSFT, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,                       KC_9,KC_5,KC_6,KC_7,KC_8,KC_PEQL,
+      KC_LSFT, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,                       KC_0, KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-      KC_LCTL, KC_F11,  KC_F12,  KC_ENT,  KC_SPC,  KC_BSPC,                      KC_1,KC_2,KC_3, KC_4,KC_5,KC_PDOT,
+      KC_LCTL, KC_F11,  KC_F12,  KC_ENT,  KC_SPC,  KC_BSPC,                      XXXXXXX, KC_1, KC_2, KC_3, KC_PDOT, XXXXXXX,
   //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
                                           KC_TRNS, KC_TRNS,  MO(10),     KC_TRNS,  KC_TRNS, KC_TRNS
                                       //╰───────────────────────────╯   ╰───────────────────────────╯
@@ -69,16 +69,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
    [5] = LAYOUT_split_3x6_3(
   //╭──────────────────────────────────────────────────────────────────────╮     ╭──────────────────────────────────────────────────────╮
-     XXXXXXX, XXXXXXX, XXXXXXX, OSM(MOD_HYPR), KC_ENT, XXXXXXX,                   KC_PPLS, KC_MINS, KC_PAST, KC_PSLS, XXXXXXX,XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, OSM(MOD_HYPR), KC_ENT, XXXXXXX,                    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //├──────────────────────────────────────────────────────────────────────┤     ├──────────────────────────────────────────────────────┤
      KC_GRV,                           OSM(MOD_LGUI|MOD_LSFT),
      OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI),  OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),
-     OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),  OSM(MOD_MEH),                               KC_9,KC_5,KC_6,KC_7,KC_8,KC_PEQL,
+     OSM(MOD_LSFT|MOD_LALT|MOD_LGUI),  OSM(MOD_MEH),                               KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, KC_MINS,
   //├──────────────────────────────────────────────────────────────────────┤     ├──────────────────────────────────────────────────────┤
     KC_LGUI,                OSM(MOD_LCTL|MOD_LALT), OSM(MOD_LCTL|MOD_LGUI),
-    OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LALT|MOD_LSFT), OSM(MOD_LALT|MOD_LGUI),        KC_1,KC_2,KC_3, KC_4,KC_5,KC_PDOT,
+    OSM(MOD_LCTL|MOD_LSFT), OSM(MOD_LALT|MOD_LSFT), OSM(MOD_LALT|MOD_LGUI),       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //╰───────────────────────────────────────────────────────────────────────┤    ├─────────────────────────────────────────╯
-                                         KC_TRNS, KC_TRNS,  KC_TRNS,     KC_TRNS,  KC_TRNS, KC_TRNS
+                                         KC_TRNS, KC_TRNS,  KC_TRNS,     KC_SPC, XXXXXXX, KC_BSPC
                                      //╰────────+────────+─────────╯    ╰────────+─────────+────────╯
  ),
 
@@ -112,9 +112,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
       XXXXXXX, XXXXXXX, KC_5, XXXXXXX, XXXXXXX, KC_6,                           KC_4, KC_9, KC_PPLS, KC_MINS, KC_PAST, KC_PSLS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-      XXXXXXX, KC_2, XXXXXXX, XXXXXXX, XXXXXXX, KC_8,                           KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_LGUI, XXXXXXX,
+      XXXXXXX, KC_2, XXXXXXX, XXXXXXX, XXXXXXX, KC_8,                           KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, XXXXXXX, XXXXXXX,
   //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
-                                    XXXXXXX, XXXXXXX,  XXXXXXX,      KC_SPC,  XXXXXXX, XXXXXXX
+                                    XXXXXXX, XXXXXXX,  XXXXXXX,      KC_SPC,  KC_LGUI, XXXXXXX
                                    //╰───────────────────────────╯   ╰───────────────────────────╯
   )
 

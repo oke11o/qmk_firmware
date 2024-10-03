@@ -47,11 +47,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //╭──────────────────────────────────────────────────────╮                   ╭──────────────────────────────────────────────────────╮
      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_PEQL, KC_7, KC_8, KC_9, KC_PAST, KC_PSLS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-     XXXXXXX, KC_LSFT,    KC_D, XXXXXXX, XXXXXXX, XXXXXXX,                         KC_0, KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
+     XXXXXXX, KC_LSFT, KC_LALT, XXXXXXX,    KC_D, XXXXXXX,                         KC_0, KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_1, KC_2, KC_3, KC_PDOT, XXXXXXX,
+     XXXXXXX, KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_1, KC_2, KC_3, KC_PDOT, XXXXXXX,
   //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
-                                    KC_ESC, LT(4,KC_ENT),  KC_LGUI,      KC_SPC,  KC_LSFT, KC_DEL
+                                       KC_ESC, KC_ENT,  KC_LGUI,      KC_SPC,  KC_LSFT, KC_BSPC
                                       //╰───────────────────────────╯   ╰───────────────────────────╯
   ),
 

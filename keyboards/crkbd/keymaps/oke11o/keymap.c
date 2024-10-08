@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
    [5] = LAYOUT_split_3x6_3(
   //╭──────────────────────────────────────────────────────────────────────╮     ╭──────────────────────────────────────────────────────╮
-     XXXXXXX, XXXXXXX, XXXXXXX, OSM(MOD_HYPR), KC_ENT,  KC_SPC,                    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, OSM(MOD_HYPR), KC_ENT,  KC_SPC,                      KC_P4,   KC_P2, KC_P8,   KC_P6, KC_BTN1, KC_BTN2,
   //├──────────────────────────────────────────────────────────────────────┤     ├──────────────────────────────────────────────────────┤
      KC_GRV,                           OSM(MOD_LGUI|MOD_LSFT),
      OSM(MOD_LCTL|MOD_LSFT|MOD_LGUI),  OSM(MOD_LCTL|MOD_LALT|MOD_LGUI),

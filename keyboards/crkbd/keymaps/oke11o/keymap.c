@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
     LCTL_T(KC_MINS),  LALT_T(KC_Z),   KC_X,    KC_C,    KC_V,    KC_B,            KC_N,   LSFT_T(KC_M), LALT_T(KC_COMM),  LCTL_T(KC_DOT), LGUI_T(KC_SLSH),  KC_BSLS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-                                    KC_ESC,  LT(5,KC_ENT),  KC_LGUI,     KC_SPC, XXXXXXX, KC_BSPC //MO(7) TODO: надо подумать, чтобы на эту клавишу добавить
+                                    KC_ESC,  LT(5,KC_ENT),  KC_LGUI,     KC_SPC, KC_RBRC, KC_BSPC //MO(7) TODO: надо подумать, чтобы на эту клавишу добавить; KC_RBRC - ъ
                                    //╰───────────────────────────╯   ╰───────────────────────────╯
   ),
 

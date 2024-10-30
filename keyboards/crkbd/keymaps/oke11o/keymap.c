@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //╭──────────────────────────────────────────────────────╮                   ╭──────────────────────────────────────────────────────╮
      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DLR,  KC_PERC,                      KC_PEQL, KC_7, KC_8, KC_9, KC_PAST, KC_PSLS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                         KC_0, KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
+     KC_LSFT, KC_LCTL, KC_LALT, XXXXXXX, XXXXXXX, XXXXXXX,                         KC_0, KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
      XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_1, KC_2, KC_3, KC_DOT, XXXXXXX,
   //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
       XXXXXXX, KC_LALT, KC_LEFT, KC_UP,  KC_DOWN, KC_RGHT,                         KC_0, KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
   //├──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────┤
-      XXXXXXX, XXXXXXX, XXXXXXX, KC_SPC,   KC_DEL, KC_BSPC,                     XXXXXXX, KC_1, KC_2, KC_3, KC_DOT,  XXXXXXX,
+      XXXXXXX, XXXXXXX, KC_DEL, XXXXXXX,  KC_SPC, KC_BSPC,                     XXXXXXX, KC_1, KC_2, KC_3, KC_DOT,  XXXXXXX,
   //╰──────────────────────────────────────────────────────┤                   ├──────────────────────────────────────────────────────╯
                                          KC_ESC, KC_LALT,  KC_LGUI,      KC_SPC,  XXXXXXX, XXXXXXX
                                    //╰───────────────────────────╯   ╰───────────────────────────╯
@@ -88,6 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
    [5] = LAYOUT_split_3x6_3(
       // TODO: Для zmk пока пропускаю
+      // Тут так же важно нажатие KC_LGUI + KC_GRV - для переключения между окнами одного приложения
       // Так же сами стрелки тут похоже не нужны. Правые стрелки с левым указ пальцем удобнее. Но вот эти нужны для навигации курсора мыши - KC_P4,   KC_P2, KC_P8,   KC_P6, KC_BTN1, KC_BTN2
   //╭──────────────────────────────────────────────────────────────────────╮     ╭──────────────────────────────────────────────────────╮
      XXXXXXX, XXXXXXX, XXXXXXX, OSM(MOD_HYPR), KC_ENT,  KC_SPC,                      KC_P4,   KC_P2, KC_P8,   KC_P6, KC_BTN1, KC_BTN2,
